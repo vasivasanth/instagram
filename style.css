@@ -213,51 +213,6 @@ footer{
     font-size: 15px;
 }
 
-@media  screen and (max-width:700px) {
-  
-    .main-content{
-      width: auto;  
-     overflow: hidden;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .left-content{
-        display: none;
-    }
-    .hor-line{
-        display: none;
-    }
-    footer{
-       
-       background-color: #039be1;
-       width:auto;
-       overflow: hidden;
- 
-    }
-    .right-content{
-        align-items: center;
-        overflow: hidden;
-   
-    }
-    .right-content::after,.right-content1::after,
-    .main-content::after,footer::after{
-        content: "";
-        clear: both;
-    }
-
-    footer{
-        overflow: hidden;
-    }
-    
-
-    div.right-content1{
-        position: relative;
-        left: 0%;
-        top: 10px;
-        overflow: hidden;
-      }
-}
 
 /* <!-------------------------- Signup page --------------------------------> */
 
@@ -423,4 +378,57 @@ div.form-container-top{
      height: 40px;
      object-fit: cover;
  }
+
+
+ /* --------------------Media query--------------------------------------- */
+   
+
+ @media  screen and (max-width:800px) {
+  
+    #main{
+      max-width: 375px;  
+      overflow: hidden;
+      margin:auto;
+      
+    }
+
+    #right{
+        width: 97%;
+        height: auto;
+        margin:0px;
+        top: 5%;
+        overflow: hidden;
+    }  
+
+    .left-content{
+        display: none;
+        overflow: hidden;
+    }
+    .hor-line{
+        display: none;
+    }
+    footer{
+       display: none;
+       width:400px;
+       margin: 0%;
+       overflow: hidden;
  
+    }
+    
+    .right-content::after,.right-content1::after,
+    .main-content::after,footer::after{
+        content: "";
+        clear: both;
+    }
+
+    footer{
+        overflow: hidden;
+    }
+    #pop1{
+        position: absolute;
+        left: 1%;
+        top: 5%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
