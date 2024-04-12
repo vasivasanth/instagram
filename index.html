@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>instagram-clone</title>
+    <link rel="icon" type="image/x-icon" href="./images/pngwing.com.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1026cb4533.js" crossorigin="anonymous"></script>
+</head>
+<body id="blr">
+    <div class="main-content" id="main">
+
+        <div class="left-content">
+            <img src="./images/Screenshot from 2024-04-11 14-07-29.png" alt="phone">
+        </div>
+        <div class="right-content">
+            
+            <div class="form-container-top">
+            
+
+                    <h1>Instagram</h1>
+                    
+                    <input type="text" placeholder="phone number,username or email address">
+                    <input type="password" name="" id="" placeholder="password">
+                    <a class="a" href="#">Log in </a>
+                    
+                    <div class="hor-line">
+                        <h5>OR</h5>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="icon-link-fb" href="#"> <i class="fa-brands fa-square-facebook"></i> Login with Facebook</a>
+                    <br>
+                    <a class="forgetten" href="#">Forgetten your password?</a>
+
+                    
+               
+            </div>
+
+            <div class="form-container-middle">
+                <p>Don't have an account? 
+                    <a href="#" onclick="document.getElementById('pop1').style.display='block'
+                    document.getElementById('foot').style.opacity = ''
+                    document.getElementById('main').style.opacity = '.1'">Sign up</a> </p>
+            </div>
+                
+            
+
+             <div class="form-container-bottom">
+                <p>Get the app.</p>
+                   
+             <div class="images">
+                <img src="./images/appstore.png" alt="">
+                <img src="./images/googleplay.png" alt="">
+             </div>
+             
+            </div>
+        </div>
+
+    </div>
+
+
+   <br> 
+<footer>
+    <div class="foot" id="foot">
+        <a class="ff" href="#">Meta</a>
+        <a class="ff" href="#">About</a>
+        <a class="ff" href="#">Blog</a>
+        <a class="ff" href="#">Jobs</a>
+        <a class="ff" href="#">Help</a>
+        <a class="ff" href="#">Api</a>
+        <a class="ff" href="#">Privacy</a>
+        <a class="ff" href="#">Terms</a>
+        <a class="ff" href="#">Location</a>
+        <a class="ff" href="#">Instagram lite</a>
+        <a class="ff" href="#">Threads</a>
+        <a class="ff" href="#">Contact uploading and non-users</a>
+        <a class="ff" href="#">Meta Verified</a>
+    </div>
+
+    <div class="bft">
+
+        <h6>English (UK) &#169; 2024 Instagram from Meta</h6>
+    </div>
+</footer>
+
+
+<br>
+
+<!-------------------------- Signup page -------------------------------->
+
+<div id="pop1" class="right-content1">
+            
+    <div class="form-container-top1">
+    
+
+            <h1>Instagram</h1>
+        
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="phone number">
+            <input type="text" placeholder="username">
+            <input type="password" name="" id="" placeholder="password">
+            <a class="a" href="#">Sign Up </a>
+            
+            <div class="hor-line1">
+                <h5>OR</h5>
+            </div>
+            <br>
+            <br>
+            <br>
+            <a class="icon-link-fb1" href="#"> <i class="fa-brands fa-square-facebook"></i> Login with Facebook</a>
+            <br>
+           
+
+            
+       
+    </div>
+
+    <div class="form-container-middle1">
+        <p>Do you have account? <a href="index.html">Log in</a> </p>
+    </div>
+
+     <div class="form-container-bottom1">
+        <p>Get the app.</p>
+           
+     <div class="images1">
+        <img src="./images/appstore.png" alt="">
+        <img src="./images/googleplay.png" alt="">
+     </div>
+    </div>
+    <h1></h1>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('pop1');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.getElementById('main').style.opacity = '1'
+      }
+    }  </script>
+
+</body>
+</html>

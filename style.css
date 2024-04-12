@@ -1,0 +1,426 @@
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --border: rgb(219, 219, 219);
+  }
+
+
+/* Full box styling */
+div.main-content{
+    display: block;
+    width:790px;
+    margin: auto;
+    height: 700px;
+    margin-top: 50px;
+}
+
+
+/* Left content*/
+div.left-content{
+    float:left;
+    width: 50%;
+    height: 100%;
+}
+div.left-content img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Right contc */
+ div.right-content{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 65px;
+}  
+
+.right-content1::after{
+    content: "";
+    clear: both;
+}
+
+div.form-container-top{
+   padding: 0px 45px;
+   width: 90%;
+   height:60%;
+   margin: auto; 
+   border: 1px solid var(--border);
+   border-radius: 2px;
+}
+div.form-container-top h1{
+    font-family: "Cookie", cursive;
+    /* font-family: "Dancing Script", cursive; */
+    position: relative;
+    top:10px;
+    left: 28px;
+    font-size: 70px;
+    font-weight: lighter;
+}
+div.form-container-top p{
+    font-weight: lighter;
+    font-size: 17px;
+    text-align-last: center;
+}
+div.form-container-top .a{
+    display: block;
+    width: 99%;
+    background-color: #24b2f4;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    padding-top: 6px;
+    border-radius: 9px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}  
+div.form-container-bottom{
+    width: 90%;
+    height:12%;
+    margin: auto;
+    margin-top: 10px; 
+    border-radius: 2px;
+ }
+ div.form-container-middle{
+    width: 90%;
+    height:9%;
+    margin: auto;
+    margin-top: 10px; 
+    border: 1px solid var(--border);
+    border-radius: 2px;
+ }
+ input[type=text],input[type=password]{
+    width:100%;
+    height: 35px;
+    margin: 4px;
+    border: 1px solid var(--border);
+    border-radius: 1px;
+    background-color: #f2f2f2;
+ }
+ .hor-line{
+    position: absolute;
+    left: 49%;
+    transform: translate(90px,30px);
+    border: 1px solid #ddd;
+    width: 255px;
+ }
+ .hor-line h5{
+  color:rgb(150, 150, 150);
+  position: absolute;
+  top: 0%;
+  transform: translate(100px,-42px);
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px 10px;
+  font-size: 14px;
+    
+ }
+
+ /* Facebook link */
+
+ div.form-container-top .icon-link-fb{
+  display: block;
+  text-decoration: none;
+  margin-left: 50px;
+  color: #123155;
+  font-size: 18px;
+
+ }
+
+ div.form-container-top .forgetten{
+    display: block;
+    top: 20px;
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    margin-left: 59px;
+    font-size: 15px;
+ }
+
+ /* middle container */
+
+ .form-container-middle p{
+   text-align: center;
+ }
+ .form-container-middle a{
+    text-decoration: none;
+    color: #039be1;
+    font-weight: bold;
+ }
+
+/* bottom container apps */
+.form-container-bottom p{
+    text-align: center;
+    margin-top:0px;
+
+}
+.form-container-bottom .images{
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    
+}
+.form-container-bottom .div1{
+    width:50%;
+    height:50px;
+    background-image: url(./images/appstore.png);
+    background-size: cover;
+    float: left;
+}
+.form-container-bottom .div2{
+    width:50%;
+    height:50px;
+    float:left;
+    background-image: url(./images/googleplay.png);
+    background-size: cover;
+}
+
+.form-container-bottom img{
+    object-fit: contain;
+    border-radius: 3px;
+}
+.images img{
+    margin-left: 10px;
+    width: 140px;
+    height: 40px;
+    object-fit: cover;
+}
+
+footer{
+    width:790px; 
+    margin: auto;
+    overflow: hidden;
+   
+}
+
+.ff{
+    color:rgb(124, 124, 124) ;
+    text-decoration: none;
+    margin: 1px;
+    font-size: 14px;
+    display:inline-block;
+}
+
+.bft h6{
+    color:rgb(124, 124, 124) ;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media  screen and (max-width:700px) {
+  
+    .main-content{
+      width: auto;  
+     overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .left-content{
+        display: none;
+    }
+    .hor-line{
+        display: none;
+    }
+    footer{
+       
+       background-color: #039be1;
+       width:auto;
+       overflow: hidden;
+ 
+    }
+    .right-content{
+        align-items: center;
+        overflow: hidden;
+   
+    }
+    .right-content::after,.right-content1::after,
+    .main-content::after,footer::after{
+        content: "";
+        clear: both;
+    }
+
+    footer{
+        overflow: hidden;
+    }
+    
+
+    div.right-content1{
+        position: relative;
+        left: 0%;
+        top: 10px;
+        overflow: hidden;
+      }
+}
+
+/* <!-------------------------- Signup page --------------------------------> */
+
+div.right-content1{
+    display: none;
+    top: 11%;
+    left: 40%;
+    max-width: 370px;
+    height:auto;
+    margin: auto;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1; 
+    border: 1px solid var(--border);
+    border-radius:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  
+
+div.form-container-top{
+    padding: 0px 45px;
+    width: 90%;
+    height:60%;
+    margin: auto; 
+    border: 1px solid var(--border);
+    border-radius: 2px;
+ }
+ div.form-container-top1 h1{
+     font-family: "Cookie", cursive;
+     /* font-family: "Dancing Script", cursive; */
+     position: relative;
+     top:10px;
+     left: 80px;
+     font-size: 70px;
+     font-weight: lighter;
+ }
+ div.form-container-top1 p{
+     font-weight: lighter;
+     font-size: 17px;
+     text-align-last: center;
+ }
+ div.form-container-top1 .a{
+     display: block;
+     width: 89%;
+     background-color: #24b2f4;
+     text-decoration: none;
+     text-align: center;
+     height: 30px;
+     padding-top: 6px;
+     border-radius: 9px;
+     margin-top: 10px;
+     margin-left: 20px;
+     color: white;
+     font-weight: bold;
+ }  
+ div.form-container-bottom1{
+     width: 90%;
+     height:12%;
+     margin: auto;
+     margin-top: 10px; 
+     border-radius: 2px;
+  }
+  div.form-container-middle1{
+     width: 90%;
+     height:9%;
+     margin: auto;
+     margin-top: 10px; 
+     border: 1px solid var(--border);
+     border-radius: 2px;
+  }
+  .form-container-top1 input[type=text],.form-container-top1 input[type=password]{
+     width:89%;
+     height: 35px;
+     margin-left:20px ;
+     border: 1px solid var(--border);
+     border-radius: 3px;
+     background-color: #f2f2f2;
+  }
+  .hor-line1{
+     position: absolute;
+     left: 1%;
+     transform: translate(60px,30px);
+     border: 1px solid #ddd;
+     width: 255px;
+  }
+  .hor-line1 h5{
+   color:rgb(150, 150, 150);
+   position: absolute;
+   top: 0%;
+   transform: translate(100px,-42px);
+   background-color: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 50%;
+   padding: 10px 10px;
+   font-size: 14px;
+     
+  }
+ 
+  /* Facebook link */
+ 
+  div.form-container-top1 .icon-link-fb1{
+   display: block;
+   text-decoration: none;
+   margin-left: 98px;
+   color: #123155;
+   font-size: 18px;
+ 
+  }
+ 
+  div.form-container-top1 .forgetten1{
+     display: block;
+     top: 20px;
+     text-decoration: none;
+     color: rgb(15, 14, 14);
+     margin-left: 59px;
+     font-size: 15px;
+  }
+ 
+  /* middle container */
+ 
+  .form-container-middle1 p{
+    text-align: center;
+  }
+  .form-container-middle1 a{
+     text-decoration: none;
+     color: #039be1;
+     font-weight: bold;
+     
+  }
+ 
+ /* bottom container apps */
+ .form-container-bottom1 p{
+     text-align: center;
+     margin-top:0px;
+ }
+ .form-container-bottom1 .images1{
+     display: inline-block;
+     width: 100%;
+     padding-left: 10px;
+     
+ }
+ .form-container-bottom1 .div1{
+     width:50%;
+     height:50px;
+     background-image: url(./images/appstore.png);
+     background-size: cover;
+     float: left;
+ }
+ .form-container-bottom1 .div2{
+     width:50%;
+     height:50px;
+     float:left;
+     background-image: url(./images/googleplay.png);
+     background-size: cover;
+ }
+ 
+ .form-container-bottom1 img{
+     object-fit: contain;
+     border-radius: 3px;
+ }
+ .images1 img{
+     margin-left: 10px;
+     width: 140px;
+     height: 40px;
+     object-fit: cover;
+ }
+ 
